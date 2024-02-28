@@ -18,8 +18,7 @@
   "usuario_incidencia",
   "amended_from",
   "route",
-  "published",
-  "campodeprueba"
+  "published"
  ],
  "fields": [
   {
@@ -101,11 +100,6 @@
    "fieldtype": "Check",
    "label": "Published",
    "read_only": 1
-  },
-  {
-   "fieldname": "campodeprueba",
-   "fieldtype": "Data",
-   "label": "Campodeprueba"
   }
  ],
  "has_web_view": 1,
@@ -113,7 +107,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 11:34:59.313482",
+ "modified": "2024-02-28 12:14:27.757586",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
@@ -134,10 +128,12 @@
    "write": 1
   },
   {
+   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
+   "read": 1,
    "report": 1,
    "role": "Administrator",
    "share": 1,
@@ -152,7 +148,9 @@
    "read": 1,
    "report": 1,
    "role": "Cliente",
-   "share": 1
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "route": "incidencias",
