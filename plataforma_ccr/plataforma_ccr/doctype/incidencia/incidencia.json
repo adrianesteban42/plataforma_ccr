@@ -16,6 +16,7 @@
   "fecha_incidencia",
   "estado",
   "usuario_incidencia",
+  "mago",
   "amended_from",
   "route",
   "published"
@@ -100,6 +101,11 @@
    "fieldtype": "Check",
    "label": "Published",
    "read_only": 1
+  },
+  {
+   "fieldname": "mago",
+   "fieldtype": "Data",
+   "label": "mago"
   }
  ],
  "has_web_view": 1,
@@ -107,7 +113,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 10:48:27.860616",
+ "modified": "2024-02-28 11:38:27.332813",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",
