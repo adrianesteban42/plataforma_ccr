@@ -61,7 +61,9 @@
   {
    "fieldname": "localizacion_incidencia",
    "fieldtype": "Geolocation",
-   "label": "Localizaci\u00f3n"
+   "hidden": 1,
+   "label": "Localizaci\u00f3n",
+   "read_only": 1
   },
   {
    "fieldname": "descripcion_incidencia",
@@ -107,7 +109,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 12:14:27.757586",
+ "modified": "2024-02-29 16:18:30.498391",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
