@@ -16,7 +16,6 @@
   "fecha_incidencia",
   "estado",
   "usuario_incidencia",
-  "mago",
   "amended_from",
   "route",
   "published"
@@ -40,19 +39,25 @@
   {
    "fieldname": "elemento_incidencia",
    "fieldtype": "Data",
-   "label": "Elemento a reportar"
+   "in_list_view": 1,
+   "label": "Elemento a reportar",
+   "reqd": 1
   },
   {
    "fieldname": "tipo_incidencia",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Tipo",
-   "options": "Bien\nServicio"
+   "options": "Bien\nServicio",
+   "reqd": 1
   },
   {
    "fieldname": "categoria_incidencia",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Categoria",
-   "options": "Limpieza\nMantenimiento\nParque"
+   "options": "Limpieza\nMantenimiento\nParque",
+   "reqd": 1
   },
   {
    "fieldname": "img_video_incidencia",
@@ -62,7 +67,9 @@
   {
    "fieldname": "localizacion_incidencia",
    "fieldtype": "Geolocation",
-   "label": "Localizaci\u00f3n"
+   "in_list_view": 1,
+   "label": "Localizaci\u00f3n",
+   "reqd": 1
   },
   {
    "fieldname": "descripcion_incidencia",
@@ -72,8 +79,7 @@
   {
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "label": "Fecha",
-   "read_only": 1
+   "label": "Fecha"
   },
   {
    "fieldname": "estado",
@@ -101,11 +107,6 @@
    "fieldtype": "Check",
    "label": "Published",
    "read_only": 1
-  },
-  {
-   "fieldname": "mago",
-   "fieldtype": "Data",
-   "label": "mago"
   }
  ],
  "has_web_view": 1,
@@ -113,7 +114,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 11:38:27.332813",
+ "modified": "2024-03-01 11:44:18.493251",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",

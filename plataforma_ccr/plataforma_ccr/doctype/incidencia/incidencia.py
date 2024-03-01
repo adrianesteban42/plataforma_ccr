@@ -19,3 +19,7 @@ class Incidencia(WebsiteGenerator):
 		elif tipo == 'Servicio':
 			# Si el tipo es 'Servicio', asegurarse de que el campo de imagen no sea obligatorio
 			self.img_video_incidencia = None
+
+	def before_submit(self):
+		
+		self.fecha_incidencia = frappe.utils.now_datetime()
