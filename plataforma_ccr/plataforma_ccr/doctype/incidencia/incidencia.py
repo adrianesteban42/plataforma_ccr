@@ -2,11 +2,13 @@
 # For license information, please see license.txt
 
 import frappe
-# from frappe.website.website_generato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
 from frappe.website.website_generator import WebsiteGenerator
 
 class Incidencia(WebsiteGenerator):
-	pass
+
+	def before_submit(self):
+		
+		self.fecha_incidencia = frappe.utils.now_datetime()
 	# def before_insert(self):
     #     # Verificar si la geolocalización no está establecida
     #     if not self.localizacion_incidencia:

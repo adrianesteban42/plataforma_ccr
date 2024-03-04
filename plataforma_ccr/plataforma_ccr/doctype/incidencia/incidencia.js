@@ -25,7 +25,7 @@ frappe.ui.form.on('Incidencia', {
             frm.fields_dict['img_video_incidencia'].df.reqd = frm.doc.tipo_incidencia === 'Servicio';
             frm.refresh_field('img_video_incidencia');
         });
-
+      
         // Establecer la función para validar la visibilidad del campo img_video_incidencia
         frm.fields_dict['img_video_incidencia'].get_query = function(doc, cdt, cdn) {
             return {

@@ -54,8 +54,10 @@
   {
    "fieldname": "categoria_incidencia",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Categoria",
-   "options": "Limpieza\nMantenimiento\nParque"
+   "options": "Limpieza\nMantenimiento\nParque",
+   "reqd": 1
   },
   {
    "fieldname": "img_video_incidencia",
@@ -76,8 +78,7 @@
   {
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "label": "Fecha",
-   "read_only": 1
+   "label": "Fecha"
   },
   {
    "default": "Borrador",
@@ -114,7 +115,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-29 21:53:19.040329",
+ "modified": "2024-03-01 11:44:18.493251",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
