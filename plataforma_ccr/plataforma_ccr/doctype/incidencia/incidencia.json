@@ -39,13 +39,17 @@
   {
    "fieldname": "elemento_incidencia",
    "fieldtype": "Data",
-   "label": "Elemento a reportar"
+   "in_list_view": 1,
+   "label": "Elemento a reportar",
+   "reqd": 1
   },
   {
    "fieldname": "tipo_incidencia",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Tipo",
-   "options": "Bien\nServicio"
+   "options": "Servicio\nBien",
+   "reqd": 1
   },
   {
    "fieldname": "categoria_incidencia",
@@ -61,7 +65,6 @@
   {
    "fieldname": "localizacion_incidencia",
    "fieldtype": "Geolocation",
-   "hidden": 1,
    "label": "Localizaci\u00f3n",
    "read_only": 1
   },
@@ -77,10 +80,11 @@
    "read_only": 1
   },
   {
+   "default": "Borrador",
    "fieldname": "estado",
    "fieldtype": "Select",
    "label": "Estado",
-   "options": "Envidado\nAceptado\nRechazado\nFinalizado",
+   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
    "read_only": 1
   },
   {
@@ -100,6 +104,7 @@
    "default": "1",
    "fieldname": "published",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Published",
    "read_only": 1
   }
@@ -109,7 +114,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-29 16:18:30.498391",
+ "modified": "2024-02-29 21:53:19.040329",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
