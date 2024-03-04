@@ -48,7 +48,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tipo",
-   "options": "Bien\nServicio",
+   "options": "Servicio\nBien",
    "reqd": 1
   },
   {
@@ -67,9 +67,8 @@
   {
    "fieldname": "localizacion_incidencia",
    "fieldtype": "Geolocation",
-   "in_list_view": 1,
    "label": "Localizaci\u00f3n",
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "descripcion_incidencia",
@@ -82,10 +81,11 @@
    "label": "Fecha"
   },
   {
+   "default": "Borrador",
    "fieldname": "estado",
    "fieldtype": "Select",
    "label": "Estado",
-   "options": "Envidado\nAceptado\nRechazado\nFinalizado",
+   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
    "read_only": 1
   },
   {
@@ -105,6 +105,7 @@
    "default": "1",
    "fieldname": "published",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Published",
    "read_only": 1
   }
@@ -116,7 +117,7 @@
  "links": [],
  "modified": "2024-03-01 11:44:18.493251",
  "modified_by": "Administrator",
- "module": "Plataforma Ccr",
+ "module": "Plataforma CCR",
  "name": "Incidencia",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
@@ -135,10 +136,12 @@
    "write": 1
   },
   {
+   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
+   "read": 1,
    "report": 1,
    "role": "Administrator",
    "share": 1,
@@ -153,7 +156,9 @@
    "read": 1,
    "report": 1,
    "role": "Cliente",
-   "share": 1
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "route": "incidencias",

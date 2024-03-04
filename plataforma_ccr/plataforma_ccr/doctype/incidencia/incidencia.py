@@ -4,22 +4,25 @@
 import frappe
 from frappe.website.website_generator import WebsiteGenerator
 
-
 class Incidencia(WebsiteGenerator):
-
-	def validate(self):
-		# Obtener el valor del campo 'tipo'
-		tipo = self.tipo_incidencia
-
-		# Verificar si el tipo es 'Bien'
-		if tipo == 'Bien':
-			# Si el tipo es 'Bien', hacer que el campo de imagen sea obligatorio
-			if not self.img_video_incidencia:
-				frappe.throw("Por favor, adjunte una imagen para la incidencia de tipo 'Bien'")
-		elif tipo == 'Servicio':
-			# Si el tipo es 'Servicio', asegurarse de que el campo de imagen no sea obligatorio
-			self.img_video_incidencia = None
 
 	def before_submit(self):
 		
 		self.fecha_incidencia = frappe.utils.now_datetime()
+	# def before_insert(self):
+    #     # Verificar si la geolocalización no está establecida
+    #     if not self.localizacion_incidencia:
+    #         # Obtener la geolocalización actual del navegador
+    #         geolocation = self.get_current_geolocation()
+    #         if geolocation:
+    #             # Establecer la geolocalización en el campo correspondiente
+    #             self.localizacion_incidencia = geolocation
+
+    # def get_current_geolocation(self):
+    #     try:
+    #         # codigo geolocalizacion
+	# 		latitud = 37.7749
+    #         longitud = -122.4194
+    #         return f'{latitud},{longitud}'
+    #     except Exception as e:
+    #         frappe.log_error(f'Error al obtener geolocalización: {str(e)}', 'Incidencia')
