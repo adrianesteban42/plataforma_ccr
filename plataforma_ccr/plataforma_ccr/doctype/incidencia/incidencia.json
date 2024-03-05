@@ -14,7 +14,7 @@
   "localizacion_incidencia",
   "descripcion_incidencia",
   "fecha_incidencia",
-  "estado",
+  "estado_incidencia",
   "usuario_incidencia",
   "amended_from",
   "route",
@@ -48,7 +48,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tipo",
-   "options": "Servicio\nBien",
+   "options": "Bien\nServicio",
    "reqd": 1
   },
   {
@@ -67,8 +67,9 @@
   {
    "fieldname": "localizacion_incidencia",
    "fieldtype": "Geolocation",
+   "in_list_view": 1,
    "label": "Localizaci\u00f3n",
-   "read_only": 1
+   "reqd": 1
   },
   {
    "fieldname": "descripcion_incidencia",
@@ -78,28 +79,21 @@
   {
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "label": "Fecha"
-  },
-  {
-   "default": "Borrador",
-   "fieldname": "estado",
-   "fieldtype": "Select",
-   "label": "Estado",
-   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
+   "label": "Fecha",
    "read_only": 1
   },
   {
    "fieldname": "usuario_incidencia",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Usuario",
-   "options": "User",
-   "read_only": 1
+   "options": "User"
   },
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route",
-   "read_only": 1
+   "hidden": 1,
+   "label": "Route"
   },
   {
    "default": "1",
@@ -108,6 +102,13 @@
    "hidden": 1,
    "label": "Published",
    "read_only": 1
+  },
+  {
+   "fieldname": "estado_incidencia",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
@@ -115,9 +116,9 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-01 11:44:18.493251",
+ "modified": "2024-03-05 11:08:21.685159",
  "modified_by": "Administrator",
- "module": "Plataforma CCR",
+ "module": "Plataforma Ccr",
  "name": "Incidencia",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
