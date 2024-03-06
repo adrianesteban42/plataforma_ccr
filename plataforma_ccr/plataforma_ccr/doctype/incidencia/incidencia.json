@@ -14,7 +14,7 @@
   "localizacion_incidencia",
   "descripcion_incidencia",
   "fecha_incidencia",
-  "estado",
+  "estado_incidencia",
   "usuario_incidencia",
   "amended_from",
   "route",
@@ -76,17 +76,12 @@
    "label": "Descripcion"
   },
   {
+   "default": "Now",
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "label": "Fecha"
-  },
-  {
-   "default": "Borrador",
-   "fieldname": "estado",
-   "fieldtype": "Select",
-   "label": "Estado",
-   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
-   "read_only": 1
+   "label": "Fecha",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "usuario_incidencia",
@@ -108,6 +103,14 @@
    "hidden": 1,
    "label": "Published",
    "read_only": 1
+  },
+  {
+   "default": "Borrador",
+   "fieldname": "estado_incidencia",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
@@ -115,7 +118,7 @@
  "is_published_field": "published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-01 11:44:18.493251",
+ "modified": "2024-03-06 09:20:35.964483",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
@@ -155,9 +158,21 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Cliente",
+   "role": "Cliente_plataforma",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin_plataforma",
+   "share": 1,
    "write": 1
   }
  ],
