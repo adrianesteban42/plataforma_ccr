@@ -2,26 +2,39 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
- "creation": "2024-03-20 21:14:33.698427",
+ "creation": "2024-02-27 15:54:33.840801",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "incidencia_section",
+  "section_break_zfbn",
   "elemento_incidencia",
   "tipo_incidencia",
   "categoria_incidencia",
-  "multimedia_incidencia",
+  "img_video_incidencia",
+  "localizacion_incidencia",
   "descripcion_incidencia",
-  "fecha",
+  "fecha_incidencia",
   "estado_incidencia",
+  "usuario_incidencia",
+  "amended_from",
   "route",
   "published"
  ],
  "fields": [
   {
-   "fieldname": "incidencia_section",
+   "fieldname": "section_break_zfbn",
    "fieldtype": "Section Break",
    "label": "Incidencia"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Incidencia",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "elemento_incidencia",
@@ -34,19 +47,28 @@
    "fieldname": "tipo_incidencia",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Tipo de incidencia",
+   "label": "Tipo",
+   "options": "Servicio\nBien",
    "reqd": 1
   },
   {
    "fieldname": "categoria_incidencia",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Categoria",
-   "options": "Limpieza\nMantenimiento\nParque\nCarretera"
+   "options": "Limpieza\nMantenimiento\nParque",
+   "reqd": 1
   },
   {
-   "fieldname": "multimedia_incidencia",
-   "fieldtype": "Data",
-   "label": "Adjuntar multimedia"
+   "fieldname": "img_video_incidencia",
+   "fieldtype": "Attach",
+   "label": "Adjuntar Multimedia"
+  },
+  {
+   "fieldname": "localizacion_incidencia",
+   "fieldtype": "Geolocation",
+   "label": "Localizaci\u00f3n",
+   "read_only": 1
   },
   {
    "fieldname": "descripcion_incidencia",
@@ -55,12 +77,32 @@
   },
   {
    "default": "Now",
-   "fieldname": "fecha",
+   "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Fecha",
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "usuario_incidencia",
+   "fieldtype": "Link",
+   "label": "Usuario",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published",
+   "read_only": 1
   },
   {
    "default": "Borrador",
@@ -69,29 +111,18 @@
    "label": "Estado",
    "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
    "read_only": 1
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Route"
-  },
-  {
-   "default": "0",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Published"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-20 21:31:08.454210",
+ "modified": "2024-03-06 09:20:35.964483",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
- "name": "Incidencia",
+ "name": "Incidencia1",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -104,6 +135,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -116,6 +148,19 @@
    "report": 1,
    "role": "Administrator",
    "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cliente_plataforma",
+   "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -126,8 +171,9 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Cliente",
-   "share": 1
+   "role": "Admin_plataforma",
+   "share": 1,
+   "write": 1
   }
  ],
  "route": "incidencias",
