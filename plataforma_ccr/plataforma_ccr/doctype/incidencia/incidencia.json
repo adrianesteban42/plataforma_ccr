@@ -6,36 +6,17 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_zfbn",
+  "incidencia_section",
   "elemento_incidencia",
   "tipo_incidencia",
   "categoria_incidencia",
-  "img_video_incidencia",
-  "localizacion_incidencia",
   "descripcion_incidencia",
   "fecha_incidencia",
-  "estado",
-  "usuario_incidencia",
-  "amended_from",
+  "estado_incidencia",
   "route",
   "published"
  ],
  "fields": [
-  {
-   "fieldname": "section_break_zfbn",
-   "fieldtype": "Section Break",
-   "label": "Incidencia"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Incidencia",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
   {
    "fieldname": "elemento_incidencia",
    "fieldtype": "Data",
@@ -48,7 +29,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tipo",
-   "options": "Servicio\nBien",
+   "options": "Bien\nServicio",
    "reqd": 1
   },
   {
@@ -60,46 +41,22 @@
    "reqd": 1
   },
   {
-   "fieldname": "img_video_incidencia",
-   "fieldtype": "Attach",
-   "label": "Adjuntar Multimedia"
-  },
-  {
-   "fieldname": "localizacion_incidencia",
-   "fieldtype": "Geolocation",
-   "label": "Localizaci\u00f3n",
-   "read_only": 1
-  },
-  {
    "fieldname": "descripcion_incidencia",
    "fieldtype": "Text",
    "label": "Descripcion"
   },
   {
+   "default": "Now",
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
-   "label": "Fecha"
-  },
-  {
-   "default": "Borrador",
-   "fieldname": "estado",
-   "fieldtype": "Select",
-   "label": "Estado",
-   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
-   "read_only": 1
-  },
-  {
-   "fieldname": "usuario_incidencia",
-   "fieldtype": "Link",
-   "label": "Usuario",
-   "options": "User",
+   "label": "Fecha",
    "read_only": 1
   },
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route",
-   "read_only": 1
+   "hidden": 1,
+   "label": "Route"
   },
   {
    "default": "1",
@@ -108,16 +65,27 @@
    "hidden": 1,
    "label": "Published",
    "read_only": 1
+  },
+  {
+   "fieldname": "estado_incidencia",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Borrador\nEnviado\nAceptado\nRechazado\nFinalizado",
+   "read_only": 1
+  },
+  {
+   "fieldname": "incidencia_section",
+   "fieldtype": "Section Break",
+   "label": "Incidencia"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
- "is_submittable": 1,
  "links": [],
- "modified": "2024-03-01 11:44:18.493251",
+ "modified": "2024-03-21 11:01:32.435134",
  "modified_by": "Administrator",
- "module": "Plataforma CCR",
+ "module": "Plataforma Ccr",
  "name": "Incidencia",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
@@ -132,7 +100,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   },
   {
@@ -145,7 +112,6 @@
    "report": 1,
    "role": "Administrator",
    "share": 1,
-   "submit": 1,
    "write": 1
   },
   {
@@ -156,9 +122,7 @@
    "read": 1,
    "report": 1,
    "role": "Cliente",
-   "share": 1,
-   "submit": 1,
-   "write": 1
+   "share": 1
   }
  ],
  "route": "incidencias",
