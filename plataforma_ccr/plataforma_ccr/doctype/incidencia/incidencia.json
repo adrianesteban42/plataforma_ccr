@@ -46,11 +46,11 @@
    "label": "Descripcion"
   },
   {
-   "default": "Now",
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
    "label": "Fecha",
-   "read_only": 1
+   "read_only": 1,
+   "default": "Now"
   },
   {
    "fieldname": "route",
@@ -83,7 +83,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-03-21 11:01:32.435134",
+ "modified": "2024-03-21 17:53:26.312837",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",
