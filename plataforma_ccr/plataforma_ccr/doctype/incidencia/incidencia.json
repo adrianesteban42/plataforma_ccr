@@ -11,6 +11,8 @@
   "tipo_incidencia",
   "categoria_incidencia",
   "descripcion_incidencia",
+  "latitud_incidencia",
+  "longitud_incidencia",
   "fecha_incidencia",
   "estado_incidencia",
   "route",
@@ -46,11 +48,11 @@
    "label": "Descripcion"
   },
   {
+   "default": "Now",
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
    "label": "Fecha",
-   "read_only": 1,
-   "default": "Now"
+   "read_only": 1
   },
   {
    "fieldname": "route",
@@ -77,15 +79,25 @@
    "fieldname": "incidencia_section",
    "fieldtype": "Section Break",
    "label": "Incidencia"
+  },
+  {
+   "fieldname": "latitud_incidencia",
+   "fieldtype": "Data",
+   "label": "Latitud"
+  },
+  {
+   "fieldname": "longitud_incidencia",
+   "fieldtype": "Data",
+   "label": "Longitud"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-03-21 17:53:26.312837",
+ "modified": "2024-04-04 23:12:29.021605",
  "modified_by": "Administrator",
- "module": "Plataforma Ccr",
+ "module": "Plataforma CCR",
  "name": "Incidencia",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
