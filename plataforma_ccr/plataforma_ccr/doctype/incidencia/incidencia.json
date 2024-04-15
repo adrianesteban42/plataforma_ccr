@@ -1,7 +1,7 @@
 {
  "actions": [],
- "allow_guest_to_view": 1,
  "allow_rename": 1,
+ "autoname": "Incidencia-.#####",
  "creation": "2024-02-27 15:54:33.840801",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -34,10 +34,10 @@
   },
   {
    "fieldname": "categoria_incidencia",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Categoria",
-   "options": "Limpieza\nMantenimiento\nParque",
+   "options": "Categoria",
    "reqd": 1
   },
   {
@@ -46,11 +46,11 @@
    "label": "Descripcion"
   },
   {
+   "default": "Now",
    "fieldname": "fecha_incidencia",
    "fieldtype": "Date",
    "label": "Fecha",
-   "read_only": 1,
-   "default": "Now"
+   "read_only": 1
   },
   {
    "fieldname": "route",
@@ -83,7 +83,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-03-21 17:53:26.312837",
+ "modified": "2024-04-15 08:53:22.098518",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",
