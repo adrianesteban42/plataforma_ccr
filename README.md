@@ -1,6 +1,6 @@
 ## Plataforma CCR
 
-registro y gestion de insidencias
+registro y gestion de incidencias
 
 #### License
 
