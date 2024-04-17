@@ -14,7 +14,9 @@
   "fecha_incidencia",
   "estado_incidencia",
   "route",
-  "published"
+  "published",
+  "latitud_incidencia",
+  "longitud_incidencia"
  ],
  "fields": [
   {
@@ -77,13 +79,25 @@
    "fieldname": "incidencia_section",
    "fieldtype": "Section Break",
    "label": "Incidencia"
+  },
+  {
+   "fieldname": "latitud_incidencia",
+   "fieldtype": "Data",
+   "label": "Latitud",
+   "read_only": 1
+  },
+  {
+   "fieldname": "longitud_incidencia",
+   "fieldtype": "Data",
+   "label": "Longitud",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-15 08:53:22.098518",
+ "modified": "2024-04-17 12:33:14.607302",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",
