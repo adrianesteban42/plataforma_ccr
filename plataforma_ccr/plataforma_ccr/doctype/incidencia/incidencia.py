@@ -6,8 +6,8 @@ from frappe.website.website_generator import WebsiteGenerator
 
 class Incidencia(WebsiteGenerator):
 
-	def Validate(self):
+	def before_save(self):
 		
-		self.fecha_incidencia = frappe.utils.now_datetime()
+		# self.fecha_incidencia = frappe.utils.now_datetime()
 		if self.estado_incidencia == "Borrador":
 			self.estado_incidencia = "Enviado"
