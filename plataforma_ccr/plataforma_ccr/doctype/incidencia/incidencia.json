@@ -1,7 +1,7 @@
 {
  "actions": [],
- "allow_guest_to_view": 1,
  "allow_rename": 1,
+ "autoname": "Incidencia-.#####",
  "creation": "2024-02-27 15:54:33.840801",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -16,7 +16,9 @@
   "fecha_incidencia",
   "estado_incidencia",
   "route",
-  "published"
+  "published",
+  "latitud_incidencia",
+  "longitud_incidencia"
  ],
  "fields": [
   {
@@ -36,10 +38,10 @@
   },
   {
    "fieldname": "categoria_incidencia",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Categoria",
-   "options": "Limpieza\nMantenimiento\nParque",
+   "options": "Categoria",
    "reqd": 1
   },
   {
