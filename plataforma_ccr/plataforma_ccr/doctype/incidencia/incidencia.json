@@ -16,9 +16,7 @@
   "fecha_incidencia",
   "estado_incidencia",
   "route",
-  "published",
-  "latitud_incidencia",
-  "longitud_incidencia"
+  "published"
  ],
  "fields": [
   {
@@ -99,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-17 21:04:57.127301",
+ "modified": "2024-04-25 16:54:25.685222",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
