@@ -1,22 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:nombre_categoria",
- "creation": "2024-04-15 08:25:09.463877",
+ "creation": "2024-04-25 21:27:22.264649",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "categoria_section",
   "nombre_categoria",
   "route",
   "published"
  ],
  "fields": [
-  {
-   "fieldname": "categoria_section",
-   "fieldtype": "Section Break",
-   "label": "Categoria"
-  },
   {
    "fieldname": "route",
    "fieldtype": "Data",
@@ -36,19 +29,17 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nombre",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-26 09:19:33.987817",
+ "modified": "2024-04-29 22:06:06.274734",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Categoria",
- "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -69,20 +60,11 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Cliente",
-   "share": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
    "role": "Guest",
    "share": 1
   }
  ],
- "route": "categorias",
+ "route": "categoria",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
