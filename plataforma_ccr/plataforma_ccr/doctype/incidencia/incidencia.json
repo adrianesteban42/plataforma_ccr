@@ -11,8 +11,8 @@
   "tipo_incidencia",
   "categoria_incidencia",
   "descripcion_incidencia",
-  "latitud_incidencia",
-  "longitud_incidencia",
+  "latitude",
+  "longitude",
   "fecha_incidencia",
   "estado_incidencia",
   "route",
@@ -81,13 +81,13 @@
    "label": "Incidencia"
   },
   {
-   "fieldname": "latitud_incidencia",
+   "fieldname": "latitude",
    "fieldtype": "Data",
    "label": "Latitud",
    "read_only": 1
   },
   {
-   "fieldname": "longitud_incidencia",
+   "fieldname": "longitude",
    "fieldtype": "Data",
    "label": "Longitud",
    "read_only": 1
@@ -97,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-25 16:54:25.685222",
+ "modified": "2024-04-29 15:51:52.273843",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
