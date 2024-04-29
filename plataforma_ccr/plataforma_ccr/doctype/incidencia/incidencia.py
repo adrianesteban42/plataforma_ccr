@@ -2,6 +2,7 @@
 # For license information, please see license.txt
 
 import frappe
+import datetime
 from frappe.website.website_generator import WebsiteGenerator
 
 class Incidencia(WebsiteGenerator):
@@ -11,3 +12,5 @@ class Incidencia(WebsiteGenerator):
 		# self.fecha_incidencia = frappe.utils.now_datetime()
 		if self.estado_incidencia == "Borrador":
 			self.estado_incidencia = "Enviado"
+
+		self.fecha_incidencia = datetime.date.today().strftime('%Y-%m-%d')
