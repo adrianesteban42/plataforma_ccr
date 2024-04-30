@@ -28,12 +28,14 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   },
   {
    "default": "0",
    "fieldname": "published",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Published"
   }
  ],
@@ -41,7 +43,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-15 08:53:06.330769",
+ "modified": "2024-04-29 10:58:00.505383",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Categoria",
@@ -59,9 +61,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrador",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
   }
  ],
- "route": "Categorias",
+ "route": "categorias",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
