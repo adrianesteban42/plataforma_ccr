@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:nombre_categoria",
  "creation": "2024-04-25 21:27:22.264649",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -29,17 +30,19 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Nombre",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-29 22:06:06.274734",
+ "modified": "2024-05-29 02:04:55.392802",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Categoria",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

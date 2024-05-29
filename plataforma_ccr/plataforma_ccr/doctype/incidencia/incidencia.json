@@ -10,6 +10,7 @@
   "elemento_incidencia",
   "tipo_incidencia",
   "categoria_incidencia",
+  "imagen_incidencia",
   "descripcion_incidencia",
   "latitude",
   "longitude",
@@ -91,13 +92,19 @@
    "fieldtype": "Data",
    "label": "Longitud",
    "read_only": 1
+  },
+  {
+   "fieldname": "imagen_incidencia",
+   "fieldtype": "Attach Image",
+   "label": "Imagen"
   }
  ],
  "has_web_view": 1,
+ "image_field": "imagen_incidencia",
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-29 15:51:52.273843",
+ "modified": "2024-05-13 20:28:47.383867",
  "modified_by": "Administrator",
  "module": "Plataforma CCR",
  "name": "Incidencia",
