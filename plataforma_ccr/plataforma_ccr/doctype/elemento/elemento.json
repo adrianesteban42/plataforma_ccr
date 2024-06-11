@@ -1,0 +1,57 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "autoname": "format:{nombre_elemento}-{#####}",
+ "creation": "2024-06-10 11:31:32.269171",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "elemento_section",
+  "nombre_elemento",
+  "localizacion_elemento"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_elemento",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "elemento_section",
+   "fieldtype": "Section Break",
+   "label": "Elemento"
+  },
+  {
+   "fieldname": "localizacion_elemento",
+   "fieldtype": "Geolocation",
+   "label": "Localizaci\u00f3n"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-11 09:39:23.318290",
+ "modified_by": "Administrator",
+ "module": "Plataforma Ccr",
+ "name": "Elemento",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

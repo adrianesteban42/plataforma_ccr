@@ -1,4 +1,5 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "Incidencia-.#####",
@@ -10,11 +11,12 @@
   "elemento_incidencia",
   "tipo_incidencia",
   "categoria_incidencia",
+  "imagen_incidencia",
   "descripcion_incidencia",
   "fecha_incidencia",
   "estado_incidencia",
-  "latitud_incidencia",
-  "longitud_incidencia",
+  "latitude",
+  "longitude",
   "route",
   "amended_from",
   "published"
@@ -22,9 +24,10 @@
  "fields": [
   {
    "fieldname": "elemento_incidencia",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Elemento a reportar",
+   "options": "Elemento",
    "reqd": 1
   },
   {
@@ -82,16 +85,18 @@
    "label": "Incidencia"
   },
   {
-   "fieldname": "latitud_incidencia",
+   "fieldname": "latitude",
    "fieldtype": "Data",
    "label": "Latitud",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
-   "fieldname": "longitud_incidencia",
+   "fieldname": "longitude",
    "fieldtype": "Data",
    "label": "Longitud",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -103,13 +108,18 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "imagen_incidencia",
+   "fieldtype": "Attach Image",
+   "label": "Imagen"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-04-29 10:58:45.867788",
+ "modified": "2024-06-10 12:57:27.738907",
  "modified_by": "Administrator",
  "module": "Plataforma Ccr",
  "name": "Incidencia",
